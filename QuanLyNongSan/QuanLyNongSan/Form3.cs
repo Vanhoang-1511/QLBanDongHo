@@ -71,7 +71,7 @@ namespace QuanLyNongSan
                 foreach (XmlNode x in nodeListCTNS)
                 {
                     if (x.ChildNodes[4].InnerText.Equals(maNS))
-                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText+" "+x.ChildNodes[0].InnerText);
+                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText);
                 }
             }
             catch { }
@@ -98,7 +98,7 @@ namespace QuanLyNongSan
                 int donGia = int.Parse(textBoxDonGia.Text);
                 int tong = soLuong * donGia;
                 dataGridView1.Rows.Add(++stt, comboBoxTenNongSan.SelectedItem.ToString().Substring(0, comboBoxTenNongSan.SelectedItem.ToString().Length - 7), comboBoxLoaiNS.SelectedItem.ToString(), soLuong, donGia, tong,
-                 
+                    
                    comboBoxTenNongSan.SelectedItem.ToString().Substring(comboBoxTenNongSan.SelectedItem.ToString().Length-7));
                 textBoxSoLuong.Text = "";
                 textBoxDonGia.Text = "";
@@ -120,6 +120,19 @@ namespace QuanLyNongSan
 
         }
 
-   
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

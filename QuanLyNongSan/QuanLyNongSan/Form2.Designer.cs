@@ -33,12 +33,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonQLNongSan = new System.Windows.Forms.Button();
             this.buttonQLKhachHang = new System.Windows.Forms.Button();
             this.buttonLSThanhToan = new System.Windows.Forms.Button();
             this.buttonCapNhat = new System.Windows.Forms.Button();
@@ -49,7 +47,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -57,16 +54,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel1.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bg04;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.buttonQLNongSan);
             this.panel1.Controls.Add(this.buttonQLKhachHang);
             this.panel1.Controls.Add(this.buttonLSThanhToan);
             this.panel1.Controls.Add(this.buttonCapNhat);
@@ -118,16 +112,6 @@
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bg04;
-            this.pictureBox3.Image = global::QuanLyNongSan.Properties.Resources.icon06__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(74, 272);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bg04;
@@ -169,22 +153,9 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(172, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(443, 31);
+            this.label3.Size = new System.Drawing.Size(534, 37);
             this.label3.TabIndex = 0;
             this.label3.Text = "MENU QUẢN LÝ BÁN NÔNG SẢN";
-            // 
-            // buttonQLNongSan
-            // 
-            this.buttonQLNongSan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.buttonQLNongSan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQLNongSan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonQLNongSan.Location = new System.Drawing.Point(120, 272);
-            this.buttonQLNongSan.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonQLNongSan.Name = "buttonQLNongSan";
-            this.buttonQLNongSan.Size = new System.Drawing.Size(213, 51);
-            this.buttonQLNongSan.TabIndex = 7;
-            this.buttonQLNongSan.Text = "Quản lý nông sản";
-            this.buttonQLNongSan.UseVisualStyleBackColor = false;
             // 
             // buttonQLKhachHang
             // 
@@ -257,7 +228,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 357);
             this.Controls.Add(this.panel1);
@@ -271,7 +242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -288,13 +258,11 @@
         private System.Windows.Forms.Button buttonCapNhat;
         private System.Windows.Forms.Button buttonXuatNS;
         private System.Windows.Forms.Button buttonNhapNS;
-        private System.Windows.Forms.Button buttonQLNongSan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;

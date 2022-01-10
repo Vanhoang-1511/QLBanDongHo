@@ -9,7 +9,7 @@ namespace QuanLyNongSan
 {
     class BackUp
     {
-        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-KQDGKVB\\SQLEXPRESS;Initial Catalog=BanNongSan;Integrated Security=True");     
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-RPQAADQ\\SQLEXPRESS;Initial Catalog=BanNongSan;Integrated Security=True");     
         // Cái này là overload                             
         public void BackUpData() {
             BackUpData("KhachHang");

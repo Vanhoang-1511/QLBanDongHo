@@ -12,9 +12,9 @@ namespace QuanLyNongSan.Model
         XMLFile XmlFile = new XMLFile();
         public XmlNodeList getListName() {
             
-            XmlDocument XDoc = XmlFile.getXmlDocument("ChiTietNongSans.xml");
+            XmlDocument XDoc = XmlFile.getXmlDocument("ChiTietSanPhams.xml");
 
-            return XDoc.SelectNodes("/ChiTietNongSans/ChiTietNongSan");
+            return XDoc.SelectNodes("/ChiTietSanPhams/ChiTietSanPham");
         }
 
         public void setSoluong(int soLuongTraoDoi,XmlNode node) {
