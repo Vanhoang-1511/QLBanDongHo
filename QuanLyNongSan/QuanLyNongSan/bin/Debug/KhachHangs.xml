@@ -3,23 +3,23 @@
   <KhachHang>
     <maKH>KH00000</maKH>
     <tenKH>Vãn Lai</tenKH>
-    <SoTienDaDung>4760000</SoTienDaDung>
+    <SoTienDaDung>0</SoTienDaDung>
     <namSinh>0</namSinh>
     <diaChi />
   </KhachHang>
   <KhachHang>
     <maKH>KH00001</maKH>
-    <tenKH>Trần Đại</tenKH>
-    <SoTienDaDung>30000</SoTienDaDung>
+    <tenKH>Quốc Tuấn</tenKH>
+    <SoTienDaDung>0</SoTienDaDung>
     <namSinh>2001</namSinh>
-    <diaChi>Quảng Ngãi</diaChi>
+    <diaChi>Thừa Thiên Huế</diaChi>
   </KhachHang>
   <KhachHang>
     <maKH>KH00002</maKH>
-    <tenKH>Thu Hòa</tenKH>
+    <tenKH>Văn Hoàng</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>1999</namSinh>
-    <diaChi>Quảng Nam</diaChi>
+    <diaChi>Đà Nẵng</diaChi>
   </KhachHang>
   <KhachHang>
     <maKH>KH00003</maKH>
@@ -33,18 +33,18 @@
     <tenKH>Thu Hiền</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>2002</namSinh>
-    <diaChi>Ð?k L?k</diaChi>
+    <diaChi>Đắk Lắk</diaChi>
   </KhachHang>
   <KhachHang>
     <maKH>KH00005</maKH>
-    <tenKH>NHật Nga</tenKH>
+    <tenKH>Ngọc Diễm</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>2005</namSinh>
     <diaChi>Đà Nẵng</diaChi>
   </KhachHang>
   <KhachHang>
     <maKH>KH00006</maKH>
-    <tenKH>Hùng Hoàng</tenKH>
+    <tenKH>Thế Hoàng</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>1992</namSinh>
     <diaChi>Đà Nẵng</diaChi>
@@ -58,9 +58,9 @@
   </KhachHang>
   <KhachHang>
     <maKH>KH00008</maKH>
-    <tenKH>Đõ Nghĩa</tenKH>
+    <tenKH>Văn Duy</tenKH>
     <SoTienDaDung>0</SoTienDaDung>
     <namSinh>1990</namSinh>
-    <diaChi>Huế</diaChi>
+    <diaChi>Hải Phòng</diaChi>
   </KhachHang>
 </KhachHangs>
