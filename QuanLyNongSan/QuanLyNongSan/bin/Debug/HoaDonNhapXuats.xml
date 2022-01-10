@@ -63,8 +63,7 @@
   <HoaDonNhapXuat>
     <maHD>HD00011</maHD>
     <maNV>NV00001</maNV>
-    <maKH>
-    </maKH>
+    <maKH />
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
   <HoaDonNhapXuat>
@@ -88,8 +87,7 @@
   <HoaDonNhapXuat>
     <maHD>HD00015</maHD>
     <maNV>NV00001</maNV>
-    <maKH>
-    </maKH>
+    <maKH />
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
   <HoaDonNhapXuat>
@@ -119,7 +117,7 @@
   <HoaDonNhapXuat>
     <maHD>HD00020</maHD>
     <maNV>NV00001</maNV>
-    <maKH>Tuấn</maKH>
+    <maKH>Tu?n</maKH>
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
   <HoaDonNhapXuat>
@@ -150,6 +148,42 @@
     <maHD>HD00025</maHD>
     <maNV>NV00001</maNV>
     <maKH>haog</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00026</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>sei</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00027</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>sdfadf</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00028</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>KH00002</maKH>
+    <LoaiHD>X</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00029</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>abc</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00030</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>abc</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00031</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>abc</maKH>
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
 </HoaDonNhapXuats>

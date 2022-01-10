@@ -60,7 +60,7 @@ namespace QuanLyNongSan
                         );
                 }
                 else
-                    MessageBox.Show("Đầu Vào Sai","Thông Báo");
+                    MessageBox.Show("Số lượng hàng không đủ mong bạn thông cảm!!","Thông Báo");
                 textBoxSoLuong.Text = "";
             }
             catch { }
@@ -84,10 +84,16 @@ namespace QuanLyNongSan
 
         private void dataGridView1_MouseCaptureChanged(object sender, EventArgs e)
         {
-            Image image = Image.FromFile("imgs/"+dataGridView1.CurrentRow.Cells[0].Value.ToString()+".jpg");
-
-          
-            pictureBox1.Image = image;
+            try
+            {
+                Image image = Image.FromFile("imgs/" + dataGridView1.CurrentRow.Cells[0].Value.ToString() + ".jpg");
+                pictureBox1.Image = image;
+            }
+            catch (Exception)
+            {
+                Image image = Image.FromFile("imgs/noimage.png");
+                pictureBox1.Image = image;
+            }
         }
 
         private void textBoxMaKhachHang_TextChanged(object sender, EventArgs e)
@@ -106,11 +112,19 @@ namespace QuanLyNongSan
 
         private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            try {
-                dataGridView2.CurrentRow.Cells[5].Value = (int.Parse(dataGridView2.CurrentRow.Cells[3].Value.ToString()) * int.Parse(dataGridView2.CurrentRow.Cells[4].Value.ToString())).ToString();
-                capNhatTongTien();
+            try
+            {
+                if (dataGridView2.Rows.Count != 1)
+                {
+                    dataGridView2.CurrentRow.Cells[5].Value = (int.Parse(dataGridView2.CurrentRow.Cells[3].Value.ToString()) * int.Parse(dataGridView2.CurrentRow.Cells[4].Value.ToString())).ToString();
+                    capNhatTongTien();
+                }
+
             }
-            catch { }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void buttonThanhToan_Click(object sender, EventArgs e)
@@ -169,14 +183,9 @@ namespace QuanLyNongSan
             labelTongTien.Text = "";
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void buttonTimKiem_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

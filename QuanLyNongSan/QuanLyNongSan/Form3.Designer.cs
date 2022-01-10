@@ -156,7 +156,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bgr;
             this.groupBox1.Controls.Add(this.textBoxDonGia);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.comboBoxTenNongSan);

@@ -10,32 +10,32 @@ namespace QuanLyNongSan
     class Restore
     {
 
-        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-KQDGKVB\\SQLEXPRESS;Initial Catalog=BanNongSan;Integrated Security=True");
-        public void RestoreData() {
-            RestoreData("select * from NhanVien_table","NhanVien");
-            RestoreData("select * from KhachHang_table", "KhachHang");
-            RestoreData("select * from DanhMucNongSan_table", "DanhMucNongSan");
-            RestoreData("select * from ChiTietNongSan_table", "ChiTietNongSan");
-            RestoreData("select * from HoaDonNhapXuat_table", "HoaDonNhapXuat");
-            RestoreData("select * from ChiTietHoaDon_table", "ChiTietHoaDon");
-        }
-        public void RestoreData(String query,String XMLName)
+        SqlConnection conn = new SqlConnection("Data Source=VZCOMPUTER\\SQLEXPRESS;Initial Catalog=BanDongHo;Persist Security Info=True;User ID=sa;Password=123");
+        public void RestoreData()
         {
-          
-          
-            try { 
+            RestoreData("select * from NhanVien", "NhanVien");
+            RestoreData("select * from KhachHang", "KhachHang");
+            RestoreData("select * from DanhMucSanPham", "DanhMucSanPham");
+            RestoreData("select * from ChiTietSanPham", "ChiTietSanPham");
+            RestoreData("select * from HoaDonNhapXuat", "HoaDonNhapXuat");
+            RestoreData("select * from ChiTietHoaDon", "ChiTietHoaDon");
+        }
+        public void RestoreData(String query, String XMLName)
+        {
+            try
+            {
 
-            
-            SqlDataAdapter da = new SqlDataAdapter();
-            da.SelectCommand = new SqlCommand(query, conn);
-            SqlCommandBuilder cb = new SqlCommandBuilder(da);
-            DataSet ds = new DataSet();
-            da.Fill(ds, XMLName);
-            ds.DataSetName = XMLName + "s";
-            ds.WriteXml(XMLName+"s"+".xml");}
-            catch(Exception e){
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = new SqlCommand(query, conn);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);
+                DataSet ds = new DataSet();
+                da.Fill(ds, XMLName);
+                ds.DataSetName = XMLName + "s";
+                ds.WriteXml(XMLName + "s" + ".xml");
+            }
+            catch (Exception e)
+            {
                 Console.WriteLine(e.ToString());
-
             }
         }
     }

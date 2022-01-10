@@ -262,7 +262,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::QuanLyNongSan.Properties.Resources.bgr;
             this.ClientSize = new System.Drawing.Size(1180, 487);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);

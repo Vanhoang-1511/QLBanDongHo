@@ -204,4 +204,22 @@
     <soLuong>20</soLuong>
     <DonGia>10000</DonGia>
   </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <maHD>HD00028</maHD>
+    <maNS>NS00008</maNS>
+    <soLuong>1</soLuong>
+    <DonGia>3000000</DonGia>
+  </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <maHD>HD00028</maHD>
+    <maNS>NS00009</maNS>
+    <soLuong>2</soLuong>
+    <DonGia>4000000</DonGia>
+  </ChiTietHoaDon>
+  <ChiTietHoaDon>
+    <maHD>HD00031</maHD>
+    <maNS>io E300</maNS>
+    <soLuong>12</soLuong>
+    <DonGia>120000</DonGia>
+  </ChiTietHoaDon>
 </ChiTietHoaDons>

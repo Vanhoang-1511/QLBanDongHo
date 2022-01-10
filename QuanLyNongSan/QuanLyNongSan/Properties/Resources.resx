@@ -136,11 +136,17 @@
   <data name="vegetable01 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vegetable01 (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (3).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg06.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg051" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg051.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon06 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon06 (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +157,14 @@
   <data name="bg10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg10.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NS00002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NS00002.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image03 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image03 (2).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon05 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon05 (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,11 +196,14 @@
   <data name="vegetable01 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vegetable01 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg041.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg11.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (3).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg05.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,13 +214,20 @@
   <data name="Vàng và Xanh lá Lá Dễ thương và Tinh nghịch Thức ăn và Du lịch Biểu trưng (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vàng và Xanh lá Lá Dễ thương và Tinh nghịch Thức ăn và Du lịch Biểu trưng (2).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg011.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="noimage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noimage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="canhDong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\canhDong.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bgr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  
+  <data name="bg042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg042.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

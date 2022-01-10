@@ -86,9 +86,9 @@
     </Compile>
     <Compile Include="Model\Backup.cs" />
     <Compile Include="Model\ChiTietHoaDon.cs" />
-    <Compile Include="Model\ChiTietNongSan.cs" />
+    <Compile Include="Model\ChiTietSanPham.cs" />
     <Compile Include="Model\DangNhap.cs" />
-    <Compile Include="Model\DanhMucNongSan.cs" />
+    <Compile Include="Model\DanhMucSanPham.cs" />
     <Compile Include="Model\HoaDon.cs" />
     <Compile Include="Model\KhachHang.cs" />
     <Compile Include="Model\XMLFile .cs" />
@@ -224,6 +224,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bgr.png" />
+    <None Include="Resources\noimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NS00002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noimage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg042.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

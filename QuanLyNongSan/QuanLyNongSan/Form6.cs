@@ -20,14 +20,14 @@ namespace QuanLyNongSan
         {
             BackUp bk = new BackUp();
             bk.BackUpData();
-            MessageBox.Show("Đã sao lưu lên máy chủ","Thông Báo");
+            MessageBox.Show("Đã sao lưu lên máy chủ","Thành công!");
         }
 
         private void buttonKhoiPhuc_Click(object sender, EventArgs e)
         {
             Restore rs = new Restore();
             rs.RestoreData();
-            MessageBox.Show("Đã Tải Dữ Liệu Từ Máy Chủ Về", "Thông Báo");
+            MessageBox.Show("Đã khôi phục dữ liệu từ máy chủ", "Thành công!");
         }
 
         private void FormSaoLuuData_Load(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace QuanLyNongSan.Model
     class HoaDon
     {
         XMLFile XmlFile = new XMLFile();
-        ChiTietNongSan cTNS = new ChiTietNongSan();
+        ChiTietSanPham cTNS = new ChiTietSanPham();
         String taoMaHoaDon(XmlDocument XDoc) {
      
             XmlNodeList temp = XDoc.SelectNodes("/HoaDonNhapXuats/HoaDonNhapXuat[last()]");
@@ -26,7 +26,7 @@ namespace QuanLyNongSan.Model
 
         public Boolean add(XmlDocument XDocCTHD,List<XmlNode> nodeList,String maKhachHang,String l) {
             try {
-                XmlDocument XDocChiTietNongSan = XmlFile.getXmlDocument("ChiTietNongSans.xml");
+                XmlDocument XDocChiTietSanPham = XmlFile.getXmlDocument("ChiTietSanPhams.xml");
                 XmlDocument XDoc = XmlFile.getXmlDocument("HoaDonNhapXuats.xml");
                 String maHD_new = taoMaHoaDon(XDoc);
                 String maNV = Form1.form2.maNV;
@@ -45,7 +45,7 @@ namespace QuanLyNongSan.Model
                 
                 XmlFile.themHoaDon(XDoc,maHD_new,maNV,maKH,loai);
                 foreach (XmlNode x in nodeList) {
-                    XmlNodeList temp = XDocChiTietNongSan.SelectNodes("/ChiTietNongSans/ChiTietNongSan[maNS = '"+x.ChildNodes[0].InnerText+"']");
+                    XmlNodeList temp = XDocChiTietSanPham.SelectNodes("/ChiTietSanPhams/ChiTietSanPham[maNS = '"+x.ChildNodes[0].InnerText+"']");
                     cTNS.setSoluong(int.Parse(x.ChildNodes[1].InnerText)*CongTru,temp[0]);
 
                     XmlNode maHoaDon = XDocCTHD.CreateElement("maHD");
@@ -54,7 +54,7 @@ namespace QuanLyNongSan.Model
                     XDocCTHD.DocumentElement.AppendChild(x);
                 }
                 XDocCTHD.Save("ChiTietHoaDons.xml");
-                XDocChiTietNongSan.Save("ChiTietNongSans.xml");
+                XDocChiTietSanPham.Save("ChiTietSanPhams.xml");
             }
             catch(Exception e) {
                 Console.WriteLine(e.Message);

@@ -39,7 +39,7 @@ namespace QuanLyNongSan
 
         private void Form3_Load(object sender, EventArgs e)
         {   
-            DanhMucNongSan DMNS = new DanhMucNongSan();
+            DanhMucSanPham DMNS = new DanhMucSanPham();
             nodeListDM = DMNS.getListMD();
             foreach (XmlNode x in nodeListDM)
             {
@@ -58,14 +58,15 @@ namespace QuanLyNongSan
         {
             try
             {
-                ChiTietNongSan CTNS = new ChiTietNongSan();
+                ChiTietSanPham CTNS = new ChiTietSanPham();
                 nodeListCTNS = CTNS.getListName();
                 String maNS = "";
                 comboBoxTenNongSan.Items.Clear();
                 foreach (XmlNode x in nodeListDM)
                 {
-                    if (x.ChildNodes[1].InnerText.Equals(comboBoxLoaiNS.SelectedItem.ToString()))
-                        maNS = x.ChildNodes[0].InnerText;
+                    if(comboBoxLoaiNS.SelectedItem != null)
+                        if (x.ChildNodes[1].InnerText.Equals(comboBoxLoaiNS.SelectedItem.ToString()))
+                            maNS = x.ChildNodes[0].InnerText;
                 }
 
                 foreach (XmlNode x in nodeListCTNS)
