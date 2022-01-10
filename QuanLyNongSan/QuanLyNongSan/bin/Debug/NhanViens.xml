@@ -2,25 +2,25 @@
 <NhanViens>
   <NhanVien>
     <maNV>NV00001</maNV>
-    <tenNV>Lâm Tru?ng Truong</tenNV>
+    <tenNV>Lâm Trung Trương</tenNV>
     <tenDN>truong1</tenDN>
     <matKhau>12345</matKhau>
   </NhanVien>
   <NhanVien>
     <maNV>NV00002</maNV>
-    <tenNV>Qu?nh Nga Ngô</tenNV>
+    <tenNV>Thúy Nga</tenNV>
     <tenDN>nga2</tenDN>
     <matKhau>12345</matKhau>
   </NhanVien>
   <NhanVien>
     <maNV>NV00003</maNV>
-    <tenNV>Thiên Ð?c Phan</tenNV>
+    <tenNV>Phan Văn Đức</tenNV>
     <tenDN>duc3</tenDN>
     <matKhau>12345</matKhau>
   </NhanVien>
   <NhanVien>
     <maNV>NV00004</maNV>
-    <tenNV>Ðang Khánh Tr?nh</tenNV>
+    <tenNV>Phan Văn Minh khánh</tenNV>
     <tenDN>khanh4</tenDN>
     <matKhau>12345</matKhau>
   </NhanVien>
@@ -32,7 +32,7 @@
   </NhanVien>
   <NhanVien>
     <maNV>NV00006</maNV>
-    <tenNV>Tru?ng Phát Vuong</tenNV>
+    <tenNV>Trương Phát</tenNV>
     <tenDN>phattruong02</tenDN>
     <matKhau>12345</matKhau>
   </NhanVien>

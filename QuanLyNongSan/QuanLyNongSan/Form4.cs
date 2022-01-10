@@ -28,8 +28,8 @@ namespace QuanLyNongSan
 
         void loadTable() {
             dataGridView1.Rows.Clear();
-            XDoc = XmlFile.getXmlDocument("ChiTietNongSans.xml");
-            XmlNodeList nodeList = XDoc.SelectNodes("/ChiTietNongSans/ChiTietNongSan");
+            XDoc = XmlFile.getXmlDocument("ChiTietSanPhams.xml");
+            XmlNodeList nodeList = XDoc.SelectNodes("/ChiTietSanPhams/ChiTietSanPham");
             foreach (XmlNode x in nodeList)
             {
                 dataGridView1.Rows.Add(x.ChildNodes[0].InnerText, x.ChildNodes[1].InnerText, x.ChildNodes[3].InnerText, x.ChildNodes[2].InnerText, x.ChildNodes[5].InnerText);
@@ -169,13 +169,14 @@ namespace QuanLyNongSan
             labelTongTien.Text = "";
         }
 
-     
-     
-   
+        private void label4_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void buttonTimKiem_Click(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

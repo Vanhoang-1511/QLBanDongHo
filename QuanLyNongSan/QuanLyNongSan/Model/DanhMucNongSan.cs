@@ -12,8 +12,8 @@ namespace QuanLyNongSan.Model
         XMLFile XmlFile = new XMLFile();
         public XmlNodeList getListMD()
         {
-            XmlDocument XDoc = XmlFile.getXmlDocument("DanhMucNongSans.xml");
-            XmlNodeList nodeList = XDoc.SelectNodes("/DanhMucNongSans/DanhMucNongSan");
+            XmlDocument XDoc = XmlFile.getXmlDocument("DanhMucSanPhams.xml");
+            XmlNodeList nodeList = XDoc.SelectNodes("/DanhMucSanPhams/DanhMucSanPham");
             for (int i = 0; i < nodeList.Count; i++) {
                 XmlNode a = nodeList[i];
   

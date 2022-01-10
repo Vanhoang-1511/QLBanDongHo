@@ -51,10 +51,10 @@ namespace QuanLyNongSan.Model
      
             XmlNodeList temp = XDoc.SelectNodes("/KhachHangs/KhachHang[last()]");
 
-            String maHD = temp[0].ChildNodes[0].InnerText;
-            maHD = ("000000" + (int.Parse(maHD.Substring(2))+1).ToString());
-            maHD = "HD"+maHD.Substring(maHD.Length - 5);
-             return maHD;
+            String maKH = temp[0].ChildNodes[0].InnerText;
+            maKH = ("000000" + (int.Parse(maKH.Substring(2))+1).ToString());
+            maKH = "KH"+maKH.Substring(maKH.Length - 5);
+             return maKH;
         }
 
          public Boolean suaThongTin(String maKH,String ten,int namSinh,String diaCHi) {

@@ -45,9 +45,9 @@ create table  DanhMucNongSan_table(
 )
 
 insert into DanhMucNongSan_table values
-('DM00001',N'Rau'),
-('DM00002',N'Hoa Quả'),
-('DM00003',N'Trứng Thịt')
+('DM00001',N'Đồng hồ điện tử'),
+('DM00002',N'Đồng hồ kim'),
+('DM00003',N'Đồng hồ thông minh')
 
 
 create table  ChiTietNongSan_table(
@@ -62,17 +62,17 @@ create table  ChiTietNongSan_table(
 
 )
 insert into ChiTietNongSan_table values
-('NS00001','Rau Má',23,'Rau Má Nhà Trồng','DM00001',10000),
-('NS00002','Rau Muốn',23,'Trồng dưới mương','DM00001',15000),
-('NS00003','Rau Chân Vịt',23,'Nông Sản Sạch','DM00001',20000),
-('NS00004','Rau Cần Em',23,'Đảm bảo chất lượng','DM00001',12000),
-('NS00005','Xoài QN',23,'Những Quả Tuyệt Nhất','DM00002',12300),
-('NS00006','Dưa Hấu',23,'Được Trồng trên Đảo','DM00002',14000),
-('NS00007','Táo Tây',23,'Trồng trên vường Địa Đàn','DM00002',45000),
-('NS00008','Lê',23,'Từ Cây Lê Trong Truyện Kiều','DM00002',30000),
-('NS00009','Thịt bò Cube',23,'Ít Mỡ Tố cho sức khỏe','DM00003',1000000),
-('NS00010','Thịt Dê',23,'Cực Kì ngon','DM00003',150000),
-('NS00011','Thịt Gà',23,'Thực phẩm sạch không chất tạo nạt','DM00003',146000)
+('NS00001','Casio E300',23,'Kiểu dáng đep','DM00001',300000),
+('NS00002','Casio N1001',23,'Thiết kế mới, sang trọng','DM00001',550000),
+('NS00003','Casio N900',23,'Thiết kế mới, sang trọng','DM00001',480000),
+('NS00004','G-Shock 107',23,'Đảm bảo chính hãng','DM00001',1122000),
+('NS00005','Seiko A383',23,'Chất lượng đi cùng năm tháng','DM00002',1230000),
+('NS00006','Seiko A387',23,'Đồng hồ cao cấp','DM00002',1400000),
+('NS00007','Hublot Super',23,'Đảm bảo chính hãng','DM00002',4500000),
+('NS00008','Rolex Luxury',23,'Đảm bảo chính hãng','DM00002',3000000),
+('NS00009','Apple Watch 4',23,'Tích hợp nhiều công nghệ hiện đại','DM00003',4000000),
+('NS00010','Huawei Watch 11',23,'Hiện đại, sang trọng, tinh tế','DM00003',1500000),
+('NS00011','Mi band 6',23,'Ngon, bổ , rẻ','DM00003',746000)
 
 create table  HoaDonNhapXuat_table(
 	maHD varchar(50) primary key,
