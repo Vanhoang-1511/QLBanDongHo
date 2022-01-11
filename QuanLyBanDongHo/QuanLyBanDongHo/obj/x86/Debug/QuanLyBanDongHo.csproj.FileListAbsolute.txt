@@ -1,0 +1,16 @@
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.csprojAssemblyReference.cache
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form1.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form2.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form3.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form4.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form5.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.FormSaoLuuData.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Properties.Resources.resources
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.csproj.GenerateResource.cache
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.csproj.CoreCompileInputs.cache
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\bin\Debug\QuanLyBanDongHo.exe.config
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\bin\Debug\QuanLyBanDongHo.exe
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\bin\Debug\QuanLyBanDongHo.pdb
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.exe
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.pdb
+D:\QLBanDongHo\QuanLyBanDongHo\QuanLyBanDongHo\obj\x86\Debug\QuanLyBanDongHo.Form7.resources
