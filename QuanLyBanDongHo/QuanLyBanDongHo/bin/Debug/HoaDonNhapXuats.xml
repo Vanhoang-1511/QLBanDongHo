@@ -6,4 +6,22 @@
     <maKH>KH00001</maKH>
     <LoaiHD>N</LoaiHD>
   </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00002</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>hoang</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00003</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>hoang</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
+  <HoaDonNhapXuat>
+    <maHD>HD00004</maHD>
+    <maNV>NV00001</maNV>
+    <maKH>hoianf</maKH>
+    <LoaiHD>N</LoaiHD>
+  </HoaDonNhapXuat>
 </HoaDonNhapXuats>

@@ -54,6 +54,7 @@
             this.comboBoxLoaiNS = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,6 +77,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(-15, -5);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -87,7 +89,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.SkyBlue;
+            this.label5.BackColor = System.Drawing.Color.Cornsilk;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -186,16 +188,16 @@
             this.groupBox1.Size = new System.Drawing.Size(919, 240);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin Nông Sản";
+            this.groupBox1.Text = "Thông tin Sản Phẩm";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // textBoxDonGia
             // 
-            this.textBoxDonGia.Location = new System.Drawing.Point(196, 118);
+            this.textBoxDonGia.Location = new System.Drawing.Point(228, 118);
             this.textBoxDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxDonGia.Multiline = true;
             this.textBoxDonGia.Name = "textBoxDonGia";
-            this.textBoxDonGia.Size = new System.Drawing.Size(201, 38);
+            this.textBoxDonGia.Size = new System.Drawing.Size(187, 38);
             this.textBoxDonGia.TabIndex = 19;
             // 
             // label6
@@ -211,10 +213,10 @@
             // comboBoxTenNongSan
             // 
             this.comboBoxTenNongSan.FormattingEnabled = true;
-            this.comboBoxTenNongSan.Location = new System.Drawing.Point(196, 74);
+            this.comboBoxTenNongSan.Location = new System.Drawing.Point(228, 74);
             this.comboBoxTenNongSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxTenNongSan.Name = "comboBoxTenNongSan";
-            this.comboBoxTenNongSan.Size = new System.Drawing.Size(281, 30);
+            this.comboBoxTenNongSan.Size = new System.Drawing.Size(267, 30);
             this.comboBoxTenNongSan.TabIndex = 17;
             this.comboBoxTenNongSan.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenNongSan_SelectedIndexChanged);
             // 
@@ -306,10 +308,10 @@
             // comboBoxLoaiNS
             // 
             this.comboBoxLoaiNS.FormattingEnabled = true;
-            this.comboBoxLoaiNS.Location = new System.Drawing.Point(196, 33);
+            this.comboBoxLoaiNS.Location = new System.Drawing.Point(228, 33);
             this.comboBoxLoaiNS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxLoaiNS.Name = "comboBoxLoaiNS";
-            this.comboBoxLoaiNS.Size = new System.Drawing.Size(281, 30);
+            this.comboBoxLoaiNS.Size = new System.Drawing.Size(267, 30);
             this.comboBoxLoaiNS.TabIndex = 3;
             this.comboBoxLoaiNS.SelectedIndexChanged += new System.EventHandler(this.comboBoxLoaiNS_SelectedIndexChanged);
             // 
@@ -330,9 +332,20 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(28, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 22);
+            this.label1.Size = new System.Drawing.Size(181, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = " Tên Đồng hồ:";
+            this.label1.Text = " Tên Đồng hồ/Mã SP:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(44, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
@@ -382,5 +395,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button button1;
     }
 }

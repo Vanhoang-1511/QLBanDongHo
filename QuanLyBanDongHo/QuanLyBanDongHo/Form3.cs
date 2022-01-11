@@ -31,7 +31,7 @@ namespace QuanLyBanDongHo
 
             hd.ThemHoaDon(dataGridView1, textBoxNhaCungCap.Text,"N");
    
-            MessageBox.Show("Thêm Nông Sản Thành Công", "Thông Báo");
+            MessageBox.Show("Thêm Sản Phẩm Thành Công", "Thông Báo");
             dataGridView1.Rows.Clear();
 
 
@@ -72,7 +72,7 @@ namespace QuanLyBanDongHo
                 foreach (XmlNode x in nodeListCTSP)
                 {
                     if (x.ChildNodes[4].InnerText.Equals(maSP))
-                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText);
+                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText + " " + x.ChildNodes[0].InnerText);
                 }
             }
             catch { }
@@ -83,8 +83,8 @@ namespace QuanLyBanDongHo
         {
             comboBoxLoaiNS.SelectedIndex = comboBoxLoaiNS.Items.IndexOf(dataGridView1.CurrentRow.Cells[2].FormattedValue.ToString());
             comboBoxTenNongSan.SelectedIndex = comboBoxTenNongSan.Items.IndexOf(dataGridView1.CurrentRow.Cells[1].FormattedValue.ToString() + dataGridView1.CurrentRow.Cells[6].FormattedValue.ToString());
-            textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[3].FormattedValue.ToString();
             textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[4].FormattedValue.ToString();
+            textBoxSoLuong.Text = dataGridView1.CurrentRow.Cells[3].FormattedValue.ToString();
         }
 
         private void buttonThem_Click(object sender, EventArgs e)
@@ -134,6 +134,11 @@ namespace QuanLyBanDongHo
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

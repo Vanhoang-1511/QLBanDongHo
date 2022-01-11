@@ -45,7 +45,7 @@ namespace QuanLyBanDongHo.Model
                 
                 XmlFile.themHoaDon(XDoc,maHD_new,maNV,maKH,loai);
                 foreach (XmlNode x in nodeList) {
-                    XmlNodeList temp = XDocChiTietSanPham.SelectNodes("/ChiTietSanPhams/ChiTietSanPham[maNS = '"+x.ChildNodes[0].InnerText+"']");
+                    XmlNodeList temp = XDocChiTietSanPham.SelectNodes("/ChiTietSanPhams/ChiTietSanPham[maSP = '"+x.ChildNodes[0].InnerText+"']");
                     cTNS.setSoluong(int.Parse(x.ChildNodes[1].InnerText)*CongTru,temp[0]);
 
                     XmlNode maHoaDon = XDocCTHD.CreateElement("maHD");
@@ -72,11 +72,11 @@ namespace QuanLyBanDongHo.Model
 
                 XmlElement node = XDoc.CreateElement("ChiTietHoaDon");
 
-                XmlElement maNS = XDoc.CreateElement("maNS");
+                XmlElement maSP = XDoc.CreateElement("maSP");
 
-                Console.WriteLine(dataGridView1.Rows[i].Cells[6].Value.ToString() + "maNS");
+                Console.WriteLine(dataGridView1.Rows[i].Cells[6].Value.ToString() + "maSP");
 
-                maNS.InnerText = dataGridView1.Rows[i].Cells[6].Value.ToString();
+                maSP.InnerText = dataGridView1.Rows[i].Cells[6].Value.ToString();
 
 
                 XmlElement soLuong = XDoc.CreateElement("soLuong");
@@ -85,7 +85,7 @@ namespace QuanLyBanDongHo.Model
                 XmlElement donGia = XDoc.CreateElement("DonGia");
                 donGia.InnerText = dataGridView1.Rows[i].Cells[4].Value.ToString(); ;
 
-                node.AppendChild(maNS);
+                node.AppendChild(maSP);
                 node.AppendChild(soLuong);
                 node.AppendChild(donGia);
                 nodeList.Add(node);
