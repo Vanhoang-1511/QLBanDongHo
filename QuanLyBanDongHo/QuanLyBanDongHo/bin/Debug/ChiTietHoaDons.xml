@@ -8,13 +8,13 @@
   </ChiTietHoaDon>
   <ChiTietHoaDon>
     <maHD>HD00002</maHD>
-    <maNS>SP00005</maNS>
+    <maSP>SP00005</maSP>
     <soLuong>20</soLuong>
     <DonGia>100000</DonGia>
   </ChiTietHoaDon>
   <ChiTietHoaDon>
     <maHD>HD00003</maHD>
-    <maNS>SP00011</maNS>
+    <maSP>SP00011</maSP>
     <soLuong>30</soLuong>
     <DonGia>100000</DonGia>
   </ChiTietHoaDon>

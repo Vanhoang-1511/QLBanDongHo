@@ -77,6 +77,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label3
             // 
@@ -278,7 +279,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
-            this.Text = "Hoàng Tuấn Luxyry Watch Store";
+            this.Text = "Hoàng Tuấn Luxury Watch Store";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +43,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxDonGia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxTenNongSan = new System.Windows.Forms.ComboBox();
+            this.comboBoxTenSanPham = new System.Windows.Forms.ComboBox();
             this.textBoxNhaCungCap = new System.Windows.Forms.TextBox();
             this.buttonInHoaDon = new System.Windows.Forms.Button();
             this.buttonSua = new System.Windows.Forms.Button();
@@ -51,10 +52,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxSoLuong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxLoaiNS = new System.Windows.Forms.ComboBox();
+            this.comboBoxLoaiSP = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -85,6 +85,17 @@
             this.panel2.Size = new System.Drawing.Size(997, 106);
             this.panel2.TabIndex = 9;
             this.panel2.TabStop = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(44, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -168,7 +179,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.textBoxDonGia);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBoxTenNongSan);
+            this.groupBox1.Controls.Add(this.comboBoxTenSanPham);
             this.groupBox1.Controls.Add(this.textBoxNhaCungCap);
             this.groupBox1.Controls.Add(this.buttonInHoaDon);
             this.groupBox1.Controls.Add(this.buttonSua);
@@ -177,7 +188,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxSoLuong);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBoxLoaiNS);
+            this.groupBox1.Controls.Add(this.comboBoxLoaiSP);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -210,15 +221,15 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Đơn Giá";
             // 
-            // comboBoxTenNongSan
+            // comboBoxTenSanPham
             // 
-            this.comboBoxTenNongSan.FormattingEnabled = true;
-            this.comboBoxTenNongSan.Location = new System.Drawing.Point(228, 74);
-            this.comboBoxTenNongSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxTenNongSan.Name = "comboBoxTenNongSan";
-            this.comboBoxTenNongSan.Size = new System.Drawing.Size(267, 30);
-            this.comboBoxTenNongSan.TabIndex = 17;
-            this.comboBoxTenNongSan.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenNongSan_SelectedIndexChanged);
+            this.comboBoxTenSanPham.FormattingEnabled = true;
+            this.comboBoxTenSanPham.Location = new System.Drawing.Point(228, 74);
+            this.comboBoxTenSanPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxTenSanPham.Name = "comboBoxTenSanPham";
+            this.comboBoxTenSanPham.Size = new System.Drawing.Size(267, 30);
+            this.comboBoxTenSanPham.TabIndex = 17;
+            this.comboBoxTenSanPham.SelectedIndexChanged += new System.EventHandler(this.comboBoxTenNongSan_SelectedIndexChanged);
             // 
             // textBoxNhaCungCap
             // 
@@ -305,15 +316,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Số lượng:";
             // 
-            // comboBoxLoaiNS
+            // comboBoxLoaiSP
             // 
-            this.comboBoxLoaiNS.FormattingEnabled = true;
-            this.comboBoxLoaiNS.Location = new System.Drawing.Point(228, 33);
-            this.comboBoxLoaiNS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxLoaiNS.Name = "comboBoxLoaiNS";
-            this.comboBoxLoaiNS.Size = new System.Drawing.Size(267, 30);
-            this.comboBoxLoaiNS.TabIndex = 3;
-            this.comboBoxLoaiNS.SelectedIndexChanged += new System.EventHandler(this.comboBoxLoaiNS_SelectedIndexChanged);
+            this.comboBoxLoaiSP.FormattingEnabled = true;
+            this.comboBoxLoaiSP.Location = new System.Drawing.Point(228, 33);
+            this.comboBoxLoaiSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxLoaiSP.Name = "comboBoxLoaiSP";
+            this.comboBoxLoaiSP.Size = new System.Drawing.Size(267, 30);
+            this.comboBoxLoaiSP.TabIndex = 3;
+            this.comboBoxLoaiSP.SelectedIndexChanged += new System.EventHandler(this.comboBoxLoaiNS_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -336,17 +347,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = " Tên Đồng hồ/Mã SP:";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(44, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -355,7 +355,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form3";
-            this.Text = "Hoàng Tuấn Luxyry Watch Store";
+            this.Text = "Hoàng Tuấn Luxury Watch Store";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -379,13 +379,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxSoLuong;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBoxLoaiNS;
+        private System.Windows.Forms.ComboBox comboBoxLoaiSP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBoxTenNongSan;
+        private System.Windows.Forms.ComboBox comboBoxTenSanPham;
         private System.Windows.Forms.TextBox textBoxDonGia;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

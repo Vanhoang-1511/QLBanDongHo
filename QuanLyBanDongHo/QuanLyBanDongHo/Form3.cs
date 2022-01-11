@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using QuanLyBanDongHo.Model;
@@ -43,7 +37,7 @@ namespace QuanLyBanDongHo
             nodeListDM = DMSP.getListMD();
             foreach (XmlNode x in nodeListDM)
             {
-                comboBoxLoaiNS.Items.Add(x.ChildNodes[1].InnerText);
+                comboBoxLoaiSP.Items.Add(x.ChildNodes[1].InnerText);
             
             }
         }
@@ -61,18 +55,18 @@ namespace QuanLyBanDongHo
                 ChiTietSanPham CTSP = new ChiTietSanPham();
                 nodeListCTSP = CTSP.getListName();
                 String maSP = "";
-                comboBoxTenNongSan.Items.Clear();
+                comboBoxTenSanPham.Items.Clear();
                 foreach (XmlNode x in nodeListDM)
                 {
-                    if(comboBoxLoaiNS.SelectedItem != null)
-                        if (x.ChildNodes[1].InnerText.Equals(comboBoxLoaiNS.SelectedItem.ToString()))
+                    if(comboBoxLoaiSP.SelectedItem != null)
+                        if (x.ChildNodes[1].InnerText.Equals(comboBoxLoaiSP.SelectedItem.ToString()))
                             maSP = x.ChildNodes[0].InnerText;
                 }
 
                 foreach (XmlNode x in nodeListCTSP)
                 {
                     if (x.ChildNodes[4].InnerText.Equals(maSP))
-                        comboBoxTenNongSan.Items.Add(x.ChildNodes[1].InnerText + " " + x.ChildNodes[0].InnerText);
+                        comboBoxTenSanPham.Items.Add(x.ChildNodes[1].InnerText + " " + x.ChildNodes[0].InnerText);
                 }
             }
             catch { }
@@ -81,8 +75,8 @@ namespace QuanLyBanDongHo
 
         private void dataGridView1_MouseCaptureChanged(object sender, EventArgs e)
         {
-            comboBoxLoaiNS.SelectedIndex = comboBoxLoaiNS.Items.IndexOf(dataGridView1.CurrentRow.Cells[2].FormattedValue.ToString());
-            comboBoxTenNongSan.SelectedIndex = comboBoxTenNongSan.Items.IndexOf(dataGridView1.CurrentRow.Cells[1].FormattedValue.ToString() + dataGridView1.CurrentRow.Cells[6].FormattedValue.ToString());
+            comboBoxLoaiSP.SelectedIndex = comboBoxLoaiSP.Items.IndexOf(dataGridView1.CurrentRow.Cells[2].FormattedValue.ToString());
+            comboBoxTenSanPham.SelectedIndex = comboBoxTenSanPham.Items.IndexOf(dataGridView1.CurrentRow.Cells[1].FormattedValue.ToString() + dataGridView1.CurrentRow.Cells[6].FormattedValue.ToString());
             textBoxDonGia.Text = dataGridView1.CurrentRow.Cells[4].FormattedValue.ToString();
             textBoxSoLuong.Text = dataGridView1.CurrentRow.Cells[3].FormattedValue.ToString();
         }
@@ -98,15 +92,15 @@ namespace QuanLyBanDongHo
                 int soLuong = int.Parse(textBoxSoLuong.Text);
                 int donGia = int.Parse(textBoxDonGia.Text);
                 int tong = soLuong * donGia;
-                dataGridView1.Rows.Add(++stt, comboBoxTenNongSan.SelectedItem.ToString().Substring(0, comboBoxTenNongSan.SelectedItem.ToString().Length - 7), comboBoxLoaiNS.SelectedItem.ToString(), soLuong, donGia, tong,
+                dataGridView1.Rows.Add(++stt, comboBoxTenSanPham.SelectedItem.ToString().Substring(0, comboBoxTenSanPham.SelectedItem.ToString().Length - 7), comboBoxLoaiSP.SelectedItem.ToString(), soLuong, donGia, tong,
                     
-                comboBoxTenNongSan.SelectedItem.ToString().Substring(comboBoxTenNongSan.SelectedItem.ToString().Length-7));
+                comboBoxTenSanPham.SelectedItem.ToString().Substring(comboBoxTenSanPham.SelectedItem.ToString().Length-7));
                 textBoxSoLuong.Text = "";
                 textBoxDonGia.Text = "";
             }
             catch {
 
-                MessageBox.Show("Thêm Nông Sản Thất Bại", "Thông Báo");
+                MessageBox.Show("Thêm sản phẩm Thất Bại", "Thông Báo");
             }
        
         }

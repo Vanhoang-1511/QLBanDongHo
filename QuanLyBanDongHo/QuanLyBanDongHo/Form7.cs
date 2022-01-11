@@ -1,11 +1,5 @@
 ﻿using QuanLyBanDongHo.Model;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -41,23 +35,26 @@ namespace QuanLyBanDongHo
             XmlNodeList nodeListCTHD = XDoc.SelectNodes("/ChiTietHoaDons/ChiTietHoaDon");
             foreach (XmlNode x in nodeListDH)
             {
-                tongtien = 0;
-                soluong = 0;
-                foreach (XmlNode a in nodeListKH)
-                    if ((a.ChildNodes[0].InnerText).Equals(x.ChildNodes[2].InnerText))
-                        tenKhach = a.ChildNodes[1].InnerText;
-                foreach (XmlNode b in nodeListNV)
-                    if ((b.ChildNodes[0].InnerText).Equals(x.ChildNodes[1].InnerText))
-                        tenNV = b.ChildNodes[1].InnerText;
-                foreach (XmlNode c in nodeListCTHD) { 
-                    if ((c.ChildNodes[0].InnerText).Equals(x.ChildNodes[0].InnerText))
+                if(x.ChildNodes[3].InnerText.Equals("X"))
+                {
+                    tongtien = 0;
+                    soluong = 0;
+                    foreach (XmlNode a in nodeListKH)
+                        if ((a.ChildNodes[0].InnerText).Equals(x.ChildNodes[2].InnerText))
+                            tenKhach = a.ChildNodes[1].InnerText;
+                    foreach (XmlNode b in nodeListNV)
+                        if ((b.ChildNodes[0].InnerText).Equals(x.ChildNodes[1].InnerText))
+                            tenNV = b.ChildNodes[1].InnerText;
+                    foreach (XmlNode c in nodeListCTHD)
                     {
-                        tongtien += int.Parse(c.ChildNodes[3].InnerText);
-                        soluong += int.Parse(c.ChildNodes[2].InnerText);
+                        if ((c.ChildNodes[0].InnerText).Equals(x.ChildNodes[0].InnerText))
+                        {
+                            tongtien += int.Parse(c.ChildNodes[3].InnerText);
+                            soluong += int.Parse(c.ChildNodes[2].InnerText);
+                        }
                     }
+                    gvDonHang.Rows.Add(x.ChildNodes[0].InnerText, tenKhach, tenNV, soluong, tongtien);
                 }
-                gvDonHang.Rows.Add(x.ChildNodes[0].InnerText, tenKhach, tenNV, soluong, tongtien);
-                
             }
         }
 

@@ -39,10 +39,9 @@ namespace QuanLyBanDongHo
         private void BackUpData(String XMLFileName)
         {
             XDocument XDoc = XDocument.Load(XMLFileName + "s.xml");
-            Console.WriteLine(111111111);
             conn.Open();
             SqlCommand command;
-            // Tạo chuỗi câu lệnh , Nếu dùng Console là sẽ thấy lệnh
+            // Tạo chuỗi câu lệnh
             String query = "DELETE FROM " + XMLFileName + " \n insert into " + XMLFileName + " values\n";
             try
             {
@@ -51,8 +50,8 @@ namespace QuanLyBanDongHo
                     toString(x);
                     query += toString(x);
                 }
-                Console.WriteLine(query.Substring(0, query.Length - 2));
-                // Tạo xong là chạy như bình thường như chạy 1 câu trong ssms thôi
+
+                // Tạo xong là chạy như bình thường như chạy 1 câu trong ssms
                 command = new SqlCommand(query.Substring(0, query.Length - 2), conn);
                 command.ExecuteNonQuery();
                 conn.Close();
